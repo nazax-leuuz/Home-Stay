@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+
+:root {
+  /* I setted this to my prefered colors and pixels */
+  --primary-color: #2c3855;
+  --primary-color-dark: #435681;
+  --text-dark: #333;
+  --text-light: #767268;
+  --extra-light: #f3f4f6;
+  --white: #fff;
+  --max-width: 1200px;
+}
+
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: url('Pictures/zlayji.png') center/cover no-repeat fixed;
+}
+
+h1 {
+  /* Add spacing above headings enjoy your dream */
+  margin-top: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  /* images inside the box l3ord */
+  width: 100%;
+}
+
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 80px 16px;
+}
+
+.section__header {
+  font-size: 32px;
+  font-weight: 600;
+  text-align: center;
+  color: var(--text-dark);
+}
+
+nav {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 32px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__logo {
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.nav__links {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+}
+
+.link a {
+  color: var(--text-light);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.link a:hover {
+  color: var(--primary-color);
+}
+
+.input_btn{
+  font-size: 24px;
+  color: var(--white);
+  cursor: pointer;
+  display: none;
+}
+.header__container {
+  padding: 16px 16px 80px;
+}
+
+.header__image__container {
+  position: relative;
+  min-height: 500px;
+  background: linear-gradient(to right, rgba(44, 56, 85, 0.9), rgba(100, 125, 187, 0.1)), url("Pictures/playa.webp") center/cover no-repeat;
+  border-radius: 32px;  
+}
+
+.header__content {
+  max-width: 600px;
+  padding: 80px 32px;
+  color: var(--white);
+}
+
+.header__content h1 {
+  font-size: 56px;
+  font-weight: 600;
+  line-height: 64px;
+  margin-bottom: 16px;
+}
+
+.header__content p {
+  color: var(--extra-light);
+}
+
+.booking__container {
+  position: absolute;
+  bottom: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 96px);
+  padding: 48px 32px;
+  border-radius: 32px;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 16px;
+}
+
+.booking__container form {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.booking__container .input__group {
+  /* Group input fields with labels */
+  position: relative;
+}
+
+.booking__container label {
+  position: absolute;
+  top: 16px;
+  left: 0;
+  font-size: 19px;
+  font-weight: 500;
+  color: var(--text-dark);
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.booking__container input {
+  width: 100%;
+  padding: 16px 0 8px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid var(--primary-color);
+  background: transparent;
+  outline: none;
+}
+
+.book-now-btn {
+  padding: 10px 20px;
+  background: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.book-now-btn:hover {
+  background: var(--primary-color-dark);
+}
+
+.input__group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+
+.popular__grid {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+
+.popular__card {
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.popular__content {
+  padding: 16px;
+}
+
+.popular__card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.popular__card__header h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.popular__content p {
+  color: var(--text-light);
+}
+
+.popular__card img {
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.client__grid {
+  margin-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.client__card {
+  padding: 32px;
+  background: var(--extra-light);
+  border-radius: 16px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.client__card img {
+  max-width: 80px;
+  margin: auto;
+  margin-bottom: 16px;
+  border-radius: 100%;
+}
+
+.client__card p {
+  text-align: center;
+  color: var(--text-dark);
+}
+
+.reward__container {
+  padding: 32px;
+  text-align: center;
+  border-radius: 32px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.1);
+}
+
+.reward__container p {
+  margin-bottom: 16px;
+  font-weight: 600;
+  color: var(--text-light);
+}
+
+.reward__container h4 {
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 16px;
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.reward__btn {
+  /* Style for reward buttons */
+  padding: 10px 32px;
+  font-size: 16px;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 16px;
+  cursor: pointer;
+}
+
+.reward__btn:hover {
+  background-color: var(--primary-color-dark);
+}
+
+.footer {
+  background: #f1ebe1;
+}
+
+.footer__container {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  gap: 80px;
+}
+
+.footer__bar {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 16px;
+  font-size: 14px;
+  text-align: right;
+  color: var(--text-light);
+}

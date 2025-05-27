@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <title>Home Stay</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav__logo">Home Stay</div>
+      <ul class="nav__links">
+        <li class="link"><a href="#header-home">Home</a></li>
+        <li class="link"><a href="#target-section">Hotels</a></li>
+        <li class="link"><a href="/Appartment/index.html">Appartments</a></li>
+        <li class="link"><a href="#contact-us">About Us</a></li>
+      </ul>
+    </nav>  
+    <header id="header-home" class="section__container header__container">
+      <div class="header__image__container">
+        <div class="header__content">
+          <h1>Enjoy Your Dream Vacation in Morocco</h1>
+          <p>Book Hotels, Rooms and Appartments at lowest price.</p>
+        </div>
+        <div class="booking__container">
+          <form>
+<div class="form__group">
+  <div class="input__group">
+    <select id="destination">
+      <option  disabled selected>Select a city</option>
+      <option >Marrakech</option>
+      <option >Agadir</option>
+      <option >Tangier</option>
+      <option >Chefchaouen</option>
+      <option >Fes</option>
+      <option >Dakhla</option>
+    </select>
+  </div>
+  <p>Where are you going?</p>
+</div>
+
+            <div class="form__group">
+              <div class="input__group">
+                <input type="text" id="check-in" placeholder="check-in" />
+              </div>
+              <p>Check In</p>
+            </div>
+            <div class="form__group">
+              <div class="input__group">
+                <input type="text" id="check-out" placeholder="check-out"/>
+              </div>
+              <p>Check Out</p>
+            </div>
+            <div class="form__group">
+              <div class="input__group">
+                <input type="number" min="1" max="4" />
+              </div>
+              <p>Add guests</p>
+            </div>
+          </form>
+          
+        </div>
+      </div>
+    </header>
+
+    <section id="target-section" class="section__container popular__container">
+      <h2 class="section__header">Popular Hotels</h2>
+      <h1>Marrakech</h1>
+
+      <div class="popular__grid">
+        <div class="popular__card">
+          <img src="/Hotel/Pictures/Mamounia.webp" alt="popular hotel" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>La Mamounia</h4>
+              <h4>$536</h4>
+            </div>
+            <p>Traditional Elegance & Quiet</p>
+            <div>
+              <button class="book-now-btn" onclick="document.location='https://mamounia.com/fr/'">Book now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="popular__card">
+          <img src="/Hotel/Pictures/Aqua mirage.jpg" alt="popular hotel" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>Aqua Mirage Club & Aqua Parc</h4>
+              <h4>$134</h4>
+            </div>
+            <p>All Inclusive</p>
+            <div>
+              <button class="book-now-btn" onclick="document.location='https://www.magichotelsandresorts.com/fr/aquamirage'">Book now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="popular__card">
+          <img src="/Hotel/Pictures/Palmerie.jpg" alt="popular hotel" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>Riu Tikida Palmerie</h4>
+              <h4>$183</h4>
+            </div>
+            <p>All Inclusive</p>
+            <div>
+              <button class="book-now-btn" onclick="document.location='https://www.riu.com/fr/hotel/maroc/marrakech/clubhotel-riu-tikida-palmeraie/'">Book now</button>
+            </div>
+          </div>
+        </div>
+        <div class="popular__card">
+          <img src="/Hotel/Pictures/aqua fun.jpg" alt="popular hotel" />
+          <div class="popular__content">
+            <div class="popular__card__header">
+              <h4>Aqua Fun Club</h4>
+              <h4>$449</h4>
+            </div>
+            <p>All Inclusive</p>
+            <div>
+              <button class="book-now-btn" onclick="document.location='https://www.pickalbatros.com/fr/aqua-fun-club-resort-marrakech'">Book now</button>
+            </div>
+          </div>
+        </div>
+        <div class="popular__card">
+            <img src="/Hotel/Pictures/Garden.jpg" alt="popular hotel" />
+            <div class="popular__content">
+              <div class="popular__card__header">
+                <h4>Riu Tikida Garden</h4>
+                <h4>$297</h4>
+              </div>
+              <p>All inclusive Adults Only</p>
+              <div>
+                <button class="book-now-btn" onclick="document.location='https://www.riu.com/fr/hotel/maroc/marrakech/hotel-riu-tikida-garden/'">Book now</button>
+              </div>
+            </div>
+          </div>
+          <div class="popular__card">
+            <img src="/Hotel/Pictures/Savoy.jpg" alt="popular hotel" />
+            <div class="popular__content">
+              <div class="popular__card__header">
+                <h4>Savoy Le Grand</h4>
+                <h4>$192</h4>
+              </div>
+              <p>Luxury</p>
+              <div>
+                <button class="book-now-btn" onclick="document.location='https://www.savoylegrandhotelmarrakech.com/'">Book now</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section__container popular__container">
+          <h1>Agadir</h1>
+    
+          <div class="popular__grid">
+            <div class="popular__card">
+              <img src="/Hotel/Pictures/palace.webp" alt="popular hotel" />
+              <div class="popular__content">
+                <div class="popular__card__header">
+                  <h4>Riu Tikida Palace</h4>
+                  <h4>$320</h4>
+                </div>
+                <p>All Inclusive</p>
+                <div>
+                  <button class="book-now-btn" onclick="document.location='https://www.riu.com/fr/hotel/maroc/agadir/hotel-riu-palace-tikida-agadir/'">Book now</button>
+                </div>
+              </div>
+            </div>
+    
+            <div class="popular__card">
+              <img src="/Hotel/Pictures/les dunes.jpg" alt="popular hotel" />
+              <div class="popular__content">
+                <div class="popular__card__header">
+                  <h4>Les Dunes D'or</h4>
+                  <h4>$93</h4>
+                </div>
+                <p>Spa</p>
+                <div>
+                  <button class="book-now-btn" onclick="document.location='https://acollectionhotels.com/fr/our-destinations/agadir/resorts/dune-dor-agadir'">Book now</button>
+                </div>
+              </div>
+            </div>
+    
+            <div class="popular__card">
+              <img src="Pictures/sofitel.jpg" alt="popular hotel" />
+              <div class="popular__content">
+                <div class="popular__card__header">
+                  <h4>Sofitel Agadir Thalassa</h4>
+                  <h4>$257</h4>
+                </div>
+                <p>Sea & Spa</p>
+                <div>
+                  <button class="book-now-btn" onclick="document.location='https://www.sofitel-agadir-thalassa.com/'">Book now</button>
+                </div>
+              </div>
+            </div>
+            <div class="popular__card">
+              <img src="/Hotel/Pictures/robinson.jpg" alt="popular hotel" />
+              <div class="popular__content">
+                <div class="popular__card__header">
+                  <h4>Robinson</h4>
+                  <h4>$223</h4>
+                </div>
+                <p>All Inclusive</p>
+                <div>
+                  <button class="book-now-btn" onclick="document.location='https://www.robinson.com/en/en/home/'">Book now</button>
+                </div>
+              </div>
+            </div>
+            <div class="popular__card">
+                <img src="/Hotel/Pictures/ibero.jpg" alt="popular hotel" />
+                <div class="popular__content">
+                  <div class="popular__card__header">
+                    <h4>Iberostar Waves Founty Beach</h4>
+                    <h4>$196</h4>
+                  </div>
+                  <p>All inclusive Adults Only</p>
+                  <div>
+                    <button class="book-now-btn" onclick="document.location='https://www.iberostar.com/fr/hotels/agadir/iberostar-waves-founty-beach/'">Book now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="popular__card">
+                <img src="/Hotel/Pictures/place taghazout.webp" alt="popular hotel" />
+                <div class="popular__content">
+                  <div class="popular__card__header">
+                    <h4>Hôtel Hyatt Place Taghazout Bay</h4>
+                    <h4>$166</h4>
+                  </div>
+                  <p>Luxury</p>
+                  <div>
+                    <button class="book-now-btn" onclick="document.location='https://www.hyatt.com/hyatt-place/fr-FR/agazt-hyatt-place-taghazout-bay'">Book now</button>
+                  </div>
+                </div>
+              </div>
+            </section>
+
+            <section class="section__container popular__container">
+              <h1>Tangier</h1>
+        
+              <div class="popular__grid">
+                <div class="popular__card">
+                  <img src="/Hotel/Pictures/France.jpg" alt="popular hotel" />
+                  <div class="popular__content">
+                    <div class="popular__card__header">
+                      <h4>Grand Hotel Villa de France</h4>
+                      <h4>$138</h4>
+                    </div>
+                    <p>Traditional Elegance & Quiet</p>
+                    <div>
+                      <button class="book-now-btn" onclick="document.location='https://www.agoda.com/fr-fr/grand-hotel-villa-de-france/hotel/tangier-ma.html?cid=1844104&ds=BXwCsH%2Byw%2Fsv288F'">Book now</button>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="popular__card">
+                  <img src="/Hotel/Pictures/Royal tulip.jpg" alt="popular hotel" />
+                  <div class="popular__content">
+                    <div class="popular__card__header">
+                      <h4>Royal Tulip City Center</h4>
+                      <h4>$149</h4>
+                    </div>
+                    <p>All Inclusive</p>
+                    <div>
+                      <button class="book-now-btn" onclick="document.location='https://royal-tulip-city-center-tanger.goldentulip.com/fr-fr/'">Book now</button>
+                    </div>
+                  </div>
+                </div>
+        
+                <div class="popular__card">
+                  <img src="/Hotel/Pictures/barcelo.jpg" alt="popular hotel" />
+                  <div class="popular__content">
+                    <div class="popular__card__header">
+                      <h4>Barcélo Tanger</h4>
+                      <h4>$175</h4>
+                    </div>
+                    <p>Breakfest Included</p>
+                    <div>
+                      <button class="book-now-btn" onclick="document.location='https://www.barcelo.com/fr-ww/barcelo-tanger/'">Book now</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="popular__card">
+                  <img src="/Hotel/Pictures/Marina bay.jpg" alt="popular hotel" />
+                  <div class="popular__content">
+                    <div class="popular__card__header">
+                      <h4>Marina Bay City Center</h4>
+                      <h4>$154</h4>
+                    </div>
+                    <p>All Inclusive</p>
+                    <div>
+                      <button class="book-now-btn" onclick="document.location='https://marinabay.com-hotel.com/'">Book now</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="popular__card">
+                    <img src="/Hotel/Pictures/El minzah.jpg" alt="popular hotel" />
+                    <div class="popular__content">
+                      <div class="popular__card__header">
+                        <h4>El Minzah</h4>
+                        <h4>$143</h4>
+                      </div>
+                      <p>All inclusive Adults Only</p>
+                      <div>
+                        <button class="book-now-btn" onclick="document.location='https://elminzah.leroyal.com/'">Book now</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="popular__card">
+                    <img src="/Hotel/Pictures/hilton.jpg" alt="popular hotel" />
+                    <div class="popular__content">
+                      <div class="popular__card__header">
+                        <h4>Hilton Tangier Al Houara </h4>
+                        <h4>$154</h4>
+                      </div>
+                      <p>Resort & Spa</p>
+                      <div>
+                        <button class="book-now-btn" onclick="document.location='https://www.hilton.com/fr/hotels/tngahhi-hilton-tangier-al-houara-resort-and-spa/'">Book now</button>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="section__container popular__container">
+                  <h1>Chefchaouen</h1>
+            
+                  <div class="popular__grid">
+                    <div class="popular__card">
+                      <img src="/Hotel/Pictures/lina.jpg" alt="popular hotel" />
+                      <div class="popular__content">
+                        <div class="popular__card__header">
+                          <h4>Lina Ryad & Spa</h4>
+                          <h4>$180</h4>
+                        </div>
+                        <p>Traditional Elegance & Quiet</p>
+                        <div>
+                          <button class="book-now-btn" onclick="document.location='https://linaryad.com/'">Book now</button>
+                        </div>
+                      </div>
+                    </div>
+            
+                    <div class="popular__card">
+                      <img src="/Hotel/Pictures/la petite.jpg" alt="popular hotel" />
+                      <div class="popular__content">
+                        <div class="popular__card__header">
+                          <h4>La petite</h4>
+                          <h4>$105</h4>
+                        </div>
+                        <p>All Inclusive</p>
+                        <div>
+                          <button class="book-now-btn" onclick="document.location='https://lapetitechefchaouen.ma/'">Book now</button>
+                        </div>
+                      </div>
+                    </div>
+            
+                    <div class="popular__card">
+                      <img src="/Hotel/Pictures/Riad cherifa.jpg" alt="popular hotel" />
+                      <div class="popular__content">
+                        <div class="popular__card__header">
+                          <h4>Riad Cherifa</h4>
+                          <h4>$151</h4>
+                        </div>
+                        <p>All Inclusive</p>
+                        <div>
+                          <button class="book-now-btn" onclick="document.location='https://riadcherifahotel.com/'">Book now</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="popular__card">
+                      <img src="/Hotel/Pictures/perleta.jpg" alt="popular hotel" />
+                      <div class="popular__content">
+                        <div class="popular__card__header">
+                          <h4>Casa Perleta</h4>
+                          <h4>$48</h4>
+                        </div>
+                        <p>All Inclusive</p>
+                        <div>
+                          <button class="book-now-btn">Book now</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="popular__card">
+                        <img src="/Hotel/Pictures/Casa.jpg" alt="popular hotel" />
+                        <div class="popular__content">
+                          <div class="popular__card__header">
+                            <h4>Casa Sabila</h4>
+                            <h4>$65</h4>
+                          </div>
+                          <p>All inclusive Adults Only</p>
+                          <div>
+                            <button class="book-now-btn" onclick="document.location='https://casaperleta.com/'">Book now</button>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="popular__card">
+                        <img src="/Hotel/Pictures/riyad.jpg" alt="popular hotel" />
+                        <div class="popular__content">
+                          <div class="popular__card__header">
+                            <h4>Dar Yakout</h4>
+                            <h4>$71</h4>
+                          </div>
+                          <p>Luxury</p>
+                          <div>
+                            <button class="book-now-btn" onclick="document.location='https://www.dar-yakout.com/'">Book now</button>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+
+                    <section class="section__container popular__container">
+                      
+                      <h1>Fes</h1>
+                
+                      <div class="popular__grid">
+                        <div class="popular__card">
+                          <img src="/Hotel/Pictures/amani.jpg" alt="popular hotel" />
+                          <div class="popular__content">
+                            <div class="popular__card__header">
+                              <h4>Palais Amani</h4>
+                              <h4>$215</h4>
+                            </div>
+                            <p>Traditional Elegance & Quiet</p>
+                            <div>
+                              <button class="book-now-btn" onclick="document.location='https://www.palaisamani.com/en/palais-amani-luxury-riad-in-fez/'">Book now</button>
+                            </div>
+                          </div>
+                        </div>
+                
+                        <div class="popular__card">
+                          <img src="/Hotel/Pictures/riad fes.jpg" alt="popular hotel" />
+                          <div class="popular__content">
+                            <div class="popular__card__header">
+                              <h4>Riad Fes - Relais & Châteaux</h4>
+                              <h4>$471</h4>
+                            </div>
+                            <p>All Inclusive</p>
+                            <div>
+                              <button class="book-now-btn" onclick="document.location='https://riadfes.com/fr/'">Book now</button>
+                            </div>
+                          </div>
+                        </div>
+                
+                        <div class="popular__card">
+                          <img src="/Hotel/Pictures/Karawan.jpg" alt="popular hotel" />
+                          <div class="popular__content">
+                            <div class="popular__card__header">
+                              <h4>Karawan Riad</h4>
+                              <h4>$295</h4>
+                            </div>
+                            <p>All Inclusive</p>
+                            <div>
+                              <button class="book-now-btn" onclick="document.location='https://www.karawanriad.com/'">Book now</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="popular__card">
+                          <img src="/Hotel/Pictures/laroussa.jpg" alt="popular hotel" />
+                          <div class="popular__content">
+                            <div class="popular__card__header">
+                              <h4>Riad Laaroussa</h4>
+                              <h4>$117</h4>
+                            </div>
+                            <p>All Inclusive</p>
+                            <div>
+                              <button class="book-now-btn" onclick="document.location='https://riad-laaroussa.com/'">Book now</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="popular__card">
+                            <img src="/Hotel/Pictures/merinides.jpg" alt="popular hotel" />
+                            <div class="popular__content">
+                              <div class="popular__card__header">
+                                <h4>Les Mérinides</h4>
+                                <h4>$340</h4>
+                              </div>
+                              <p>All inclusive Adults Only</p>
+                              <div>
+                                <button class="book-now-btn" onclick="document.location='https://www.lesmerinides.com/'">Book now</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="popular__card">
+                            <img src="/Hotel/Pictures/Sahrai.jpg" alt="popular hotel" />
+                            <div class="popular__content">
+                              <div class="popular__card__header">
+                                <h4>Hotel Sahrai</h4>
+                                <h4>$249</h4>
+                              </div>
+                              <p>Luxury</p>
+                              <div>
+                                <button class="book-now-btn" onclick="document.location='https://hotelsahrai.com/fr/'">Book now</button>
+                              </div>
+                            </div>
+                          </div>
+                        </section>
+
+                        <section class="section__container popular__container">
+                          
+                          <h1>Dakhla</h1>
+                    
+                          <div class="popular__grid">
+                            <div class="popular__card">
+                              <img src="/Hotel/Pictures/tour d'eole.jpg" alt="popular hotel" />
+                              <div class="popular__content">
+                                <div class="popular__card__header">
+                                  <h4>La Tour d'Eole</h4>
+                                  <h4>$335</h4>
+                                </div>
+                                <p>Traditional Elegance & Quiet</p>
+                                <div>
+                                  <button class="book-now-btn">Book now</button>
+                                </div>
+                              </div>
+                            </div>
+                    
+                            <div class="popular__card">
+                              <img src="/Hotel/Pictures/dakhla club.jpg" alt="popular hotel" />
+                              <div class="popular__content">
+                                <div class="popular__card__header">
+                                  <h4>Dakhla Club Hotel & Spa</h4>
+                                  <h4>$154</h4>
+                                </div>
+                                <p>All Inclusive</p>
+                                <div>
+                                  <button class="book-now-btn">Book now</button>
+                                </div>
+                              </div>
+                            </div>
+                    
+                            <div class="popular__card">
+                              <img src="/Hotel/Pictures/Hotel Buenavista Dakhla.jpg" alt="popular hotel" />
+                              <div class="popular__content">
+                                <div class="popular__card__header">
+                                  <h4>Hotel Buenavista Dakhla</h4>
+                                  <h4>$191</h4>
+                                </div>
+                                <p>All Inclusive</p>
+                                <div>
+                                  <button class="book-now-btn">Book now</button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="popular__card">
+                              <img src="/Hotel/Pictures/La Crique Nature & Spa.jpg" alt="popular hotel" />
+                              <div class="popular__content">
+                                <div class="popular__card__header">
+                                  <h4>La Crique Nature & Spa</h4>
+                                  <h4>$165</h4>
+                                </div>
+                                <p>All Inclusive</p>
+                                <div>
+                                  <button class="book-now-btn">Book now</button>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="popular__card">
+                                <img src="/Hotel/Pictures/sur mer.jpg" alt="popular hotel" />
+                                <div class="popular__content">
+                                  <div class="popular__card__header">
+                                    <h4>Dakhla Sur Mer Hôtel</h4>
+                                    <h4>$68</h4>
+                                  </div>
+                                  <p>Breakfast included</p>
+                                  <div>
+                                    <button class="book-now-btn">Book now</button>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="popular__card">
+                                <img src="/Hotel/Pictures/Carvan.jpg" alt="popular hotel" />
+                                <div class="popular__content">
+                                  <div class="popular__card__header">
+                                    <h4>Caravan by Habitas Dakhla</h4>
+                                    <h4>$235</h4>
+                                  </div>
+                                  <p>Luxury</p>
+                                  <div>
+                                    <button class="book-now-btn">Book now</button>
+                                  </div>
+                                </div>
+                              </div>
+                            </section>
+
+            
+
+    <section class="client">
+      <div class="section__container client__container">
+        <h2 class="section__header">What our clients say</h2>
+        <div class="client__grid">
+          <div class="client__card">
+            <img src="/Hotel/Pictures/Weixin Image_20241105022204.jpg" alt="client" />
+            <p>
+              The booking process was seamless, and the confirmation was
+              instant. I highly recommend Home Stay for hotel bookings.
+            </p>
+          </div>
+          <div class="client__card">
+            <img src="/Hotel/Pictures/nassim.jpg" alt="client" />
+            <p>
+              The website provided detailed information about hotels, including
+              prices, photos, which helped me make an informed decision.
+            </p>
+          </div>
+          <div class="client__card">
+            <img src="/Hotel/Pictures/badr.jpg" alt="client" />
+            <p>
+              I was able to book a room within minutes, and the hotel exceeded
+              my expectations. I appreciate Home Stay's efficiency and reliability.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section__container">
+      <div class="reward__container">
+        <p>100+ discount codes</p>
+        <h4>Join rewards and discover amazing discounts on your booking</h4>
+        <button class="reward__btn">Join Rewards</button>
+      </div>
+    </section>
+
+    <footer id="contact-us" class="footer">
+      <div class="section__container footer__container">
+        <div class="footer__col">
+          <h3>Home Stay</h3>
+          <p>
+            Home Stay is a booking website that offers a seamless and
+            convenient way to find and book accommodations in Morocco.
+          </p>
+          <p>
+            With a user-friendly interface and a vast selection of hotels and appartments,
+            Home Stay aims to provide a stress-free experience for travelers
+            seeking the perfect stay.
+          </p>
+        </div>
+        <div class="footer__col">
+          <h4>Company</h4>
+          <p>About Us</p>
+          <p>Our Team</p>
+          <p>Blog</p>
+          <p>Book</p>
+          <p>Contact Us</p>
+        </div>
+        <div class="footer__col">
+          <h4>Legal</h4>
+          <p>FAQs</p>
+          <p>Terms & Conditions</p>
+          <p>Privacy Policy</p>
+        </div>
+        <div class="footer__col">
+          <h4>Resources</h4>
+          <p>Social Media</p>
+          <p>Help Center</p>
+          <p>Partnerships</p>
+        </div>
+      </div>
+    </footer>
+    
+    <script src="java.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+  const checkIn = flatpickr("#check-in", {
+    dateFormat: "Y-m-d",
+    minDate: "today",
+    onChange: function(selectedDates, dateStr) {
+      checkOut.set("minDate", dateStr);
+    }
+  });
+
+  const checkOut = flatpickr("#check-out", {
+    dateFormat: "Y-m-d",
+    minDate: "tomorrow"
+  });
+</script>
+
+  </body>
+</html>
