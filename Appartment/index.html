@@ -1,454 +1,557 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=wifi" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=open_in_new" />
-    <link rel="stylesheet" href="login.html">
-    <!-- flatpickr-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    <title>Appartments</title>
-  </head>
-  <body>
-    <header class="header">
-      <nav>
-        <div class="nav__bar">
-          <div class="logo">
-            <img src="" alt="">
-          </div>
-          <div class="nav__menu__btn" id="menu-btn">
-            <i class="ri-menu-line"></i>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=wifi" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=open_in_new" />
+  <link rel="stylesheet" href="login.html">
+  <!-- flatpickr-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <title>Appartments</title>
+</head>
+
+<body>
+  <header class="header">
+    <nav>
+      <div class="nav__bar">
+        <div class="logo">
+          <img src="" alt="">
         </div>
-        <ul class="nav__links" id="nav-links">
-          <li class="link"><a href="#home">Home</a></li>
-          <li class="link"><a href="#Appartement">Appartments</a></li>
-          <li><a href="#service">Services</a></li>
-          <li><a href="/Hotel/web.html">Hotels</a></li>
-          <li><a href="#contact-us">About Us</a></li>
+        <div class="nav__menu__btn" id="menu-btn">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+      <ul class="nav__links" id="nav-links">
+        <li class="link"><a href="#home">Home</a></li>
+        <li class="link"><a href="#Appartement">Appartments</a></li>
+        <li><a href="#service">Services</a></li>
+        <li><a href="../Hotel/web.html">Hotels</a></li>
+        <li><a href="#contact-us">About Us</a></li>
+      </ul>
+      <a href="login.html" class="btn nav__btn">Login</a>
+      <div class="nav__cart" id="cart-btn"
+        style="cursor: pointer; position: relative; margin-left: 20px; font-size: 1.5rem; color: var(--text-dark);">
+        <i class="ri-shopping-cart-2-line"></i>
+        <span id="cart-count"
+          style="position: absolute; top: -8px; right: -8px; background: var(--primary-color); color: white; font-size: 0.8rem; padding: 2px 6px; border-radius: 50%;">0</span>
+      </div>
+    </nav>
+    <div class="section__container header__container" id="home">
+      <h3>Simple - Unique - Friendly</h3>
+      <h1>Make Yourself At Home<br />Enjoy your <span>Stay</span>.</h1>
+    </div>
+  </header>
+
+
+
+  <section class="section__container booking__container">
+    <form action="/" class="booking__form">
+      <div class="input__group">
+        <span><i class="ri-calendar-2-fill"></i></span>
+        <div>
+          <label for="check-in" id="check_in">CHECK-IN</label>
+          <input type="text" placeholder="Check In" id="check-in" />
+        </div>
+      </div>
+      <div class="input__group">
+        <span><i class="ri-calendar-2-fill"></i></span>
+        <div>
+          <label for="check-out">CHECK-OUT</label>
+          <input type="text" placeholder="Check Out" id="check-out" />
+        </div>
+      </div>
+      <div class="input__group">
+        <span><i class="ri-user-fill"></i></span>
+        <div>
+          <label for="guest">GUEST</label>
+          <input type="number" placeholder="Guest" min="1" max="6" />
+        </div>
+      </div>
+      <div class="input__group input__btn">
+        <button class="btn">Search</button>
+      </div>
+    </form>
+  </section>
+
+  <section class="section__container about__container" id="about">
+    <div class="about__image">
+      <img src="assets/about.jpg" alt="about" />
+    </div>
+    <div class="about__content">
+      <p class="section__subheader">ABOUT US</p>
+      <h2 class="section__header">The Best Holidays in Morocco Start Here!</h2>
+      <p class="section__description">
+        With a focus on quality accommodations, personalized experiences, and
+        seamless booking, our platform is dedicated to ensuring that every
+        traveler embarks on their dream holiday with confidence and
+        excitement.
+      </p>
+      <div class="about__btn">
+        <button class="btn">Read More</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="section__container room__container" id="Appartement">
+    <p class="section__subheader">Available Appartments</p>
+    <h2 class="section__header">Marrakech</h2>
+    <div class="room__grid">
+      <div class="room__card">
+        <div class="room__card__image">
+          <img src="assets/ap1.webp" alt="room" />
+        </div>
+        <div class="room__card__details">
+          <h4>Appartment Marrakech</h4>
+          <p>
+            Appartement , Gueliz, Marrakech , Maroc
+          </p>
+          <h5>3 Guests, 1 Room, 1 Bed ,1 Bathroom <span>$57/night</span></h5>
+          <button class="btn">Book Now</button>
+        </div>
+      </div>
+      <div class="room__card">
+        <div class="room__card__image">
+          <img src="assets/ap2.jpeg" alt="room" />
+        </div>
+        <div class="room__card__details">
+          <h4>Appartment Marrakech</h4>
+          <p> Peaceful oasis with a pool in the heart of Gueliz
+          </p>
+          <h5>3 Guests, 1 Bedroom, 2 beds, 1 Bathroom <span>$59/night</span></h5>
+          <button class="btn">Book Now</button>
+        </div>
+      </div>
+      <div class="room__card">
+        <div class="room__card__image">
+          <img src="assets/ap3.jpeg" alt="room" />
+        </div>
+        <div class="room__card__details">
+          <h4>Appartment Marrakech</h4>
+          <p>
+            Havre de Paix au cœur de Gueliz
+          </p>
+          <h5>3 Guests, 1 bedroom, 1 bed, 1 bathroom <span>$65/night</span></h5>
+          <button class="btn">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section__container room__container">
+    <p class="section__subheader">Available Appartments</p>
+    <h2 class="section__header">Agadir</h2>
+    <div class="room__grid">
+      <div class="room__card">
+        <div class="room__card__image">
+          <img src="assets/ag1.webp" alt="room" />
+        </div>
+        <div class="room__card__details">
+          <h4>Appartment Agadir</h4>
+          <p>
+            Chic seaside apartment with mountain views
+          </p>
+          <h5>6 Guests, 2 Bedroom, 3 beds, 2 Bathroom <span>$95/night</span></h5>
+          <button class="btn">Book Now</button>
+        </div>
+      </div>
+      <div class="room__card">
+        <div class="room__card__image">
+          <img src="assets/ag3.webp" alt="room" />
+        </div>
+        <div class="room__card__details">
+          <h4>Appartment Agadir</h4>
+          <p> Peaceful oasis with a pool in the heart of Gueliz
+          </p>
+          <h5>3 Guests, 1 Bedroom, 2 beds, 1 Bathroom <span>$59/night</span></h5>
+          <button class="btn">Book Now</button>
+        </div>
+      </div>
+      <div class="room__card">
+        <div class="room__card__image">
+          <img src="assets/ag2.webp" alt="room" />
+        </div>
+        <div class="room__card__details">
+          <h4>Appartment Agadir</h4>
+          <p>
+            Havre de Paix au cœur de Gueliz
+          </p>
+          <h5>3 Guests, 1 bedroom, 1 bed, 1 bathroom <span>$65/night</span></h5>
+          <button class="btn">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section__container room__container">
+    <p class="section__subheader">Available Appartments</p>
+    <h2 class="section__header">Tangier</h2>
+    <div class="room__grid">
+      <div class="room__card">
+        <div class="room__card__image">
+          <img src="assets/ta1.webp" alt="room" />
+        </div>
+        <div class="room__card__details">
+          <h4>Appartment Tangier</h4>
+          <p>
+            Moyra Hill - Tangier
+          </p>
+          <h5>4 Guests, 1 Bedroom, 2 beds, 1 Bathroom <span>$69/night</span></h5>
+          <button class="btn">Book Now</button>
+        </div>
+      </div>
+      <div class="room__card">
+        <div class="room__card__image">
+          <img src="assets/ta2.webp" alt="room" />
+        </div>
+        <div class="room__card__details">
+          <h4>Appartment Tangier</h4>
+          <p> Loft à 5mn de la plage-Marina
+          </p>
+          <h5>3 Guests, 1 Bedroom, 2 Bathrooms <span>$59/night</span></h5>
+          <button class="btn">Book Now</button>
+        </div>
+      </div>
+      <div class="room__card">
+        <div class="room__card__image">
+          <img src="assets/ta3.webp" alt="room" />
+        </div>
+        <div class="room__card__details">
+          <h4>Appartment Tangier</h4>
+          <p>
+            Havre de Paix au cœur de Gueliz
+          </p>
+          <h5>2 Guests, 1 bedroom, 1 bed, 1 bathroom <span>$114/night</span></h5>
+          <button class="btn">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section__container room__container">
+    <p class="section__subheader">Available Appartments</p>
+    <h2 class="section__header">Chefchaouen</h2>
+    <div class="room__grid">
+      <div class="room__card">
+        <div class="room__card__image">
+          <img src="assets/ch1.webp" alt="room" />
+        </div>
+        <div class="room__card__details">
+          <h4>Appartment Chefchaouenr</h4>
+          <p>
+            Dar Lamdina
+          </p>
+          <h5>4 Guests, 2 Bedroom, 3 beds, 2 Bathroom <span>$49/night</span></h5>
+          <button class="btn">Book Now</button>
+        </div>
+      </div>
+      <div class="room__card">
+        <div class="room__card__image">
+          <img src="assets/ché.webp" alt="room" />
+        </div>
+        <div class="room__card__details">
+          <h4>Appartment Chefchaouen</h4>
+          <p> Loft à 5mn de la plage-Marina
+          </p>
+          <h5>4 Guests, 1 Bedroom, 2Bed, 1 Bathroom <span>$30/night</span></h5>
+          <button class="btn">Book Now</button>
+        </div>
+      </div>
+      <div class="room__card">
+        <div class="room__card__image">
+          <img src="assets/ch3.webp" alt="room" />
+        </div>
+        <div class="room__card__details">
+          <h4>Appartment Chefchaouen</h4>
+          <p>
+            cozy room air-conditioning & amazing breakfast
+          </p>
+          <h5>1 Guest, 1 bedroom, 1 bed, 1 bathroom <span>$39/night</span></h5>
+          <button class="btn">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section__container room__container">
+    <p class="section__subheader">Available Appartments</p>
+    <h2 class="section__header">Fes</h2>
+    <div class="room__grid">
+      <div class="room__card">
+        <div class="room__card__image">
+          <img src="assets/fes1.webp" alt="room" />
+        </div>
+        <div class="room__card__details">
+          <h4>Appartment Fes</h4>
+          <p>
+            Riad zerbtana
+          </p>
+          <h5>1 Guest, 1 Bedroom, 1 bed, 1 Bathroom <span>$24/night</span></h5>
+          <button class="btn">Book Now</button>
+        </div>
+      </div>
+      <div class="room__card">
+        <div class="room__card__image">
+          <img src="assets/fes2.jpg" alt="room" />
+        </div>
+        <div class="room__card__details">
+          <h4>Appartment Fes</h4>
+          <p> Beautiful Sultan Room
+          </p>
+          <h5>1 Guest, 1 Bedroom, 1Bed, 1 Bathroom <span>$32/night</span></h5>
+          <button class="btn">Book Now</button>
+        </div>
+      </div>
+      <div class="room__card">
+        <div class="room__card__image">
+          <img src="assets/fes3.jpg" alt="room" />
+        </div>
+        <div class="room__card__details">
+          <h4>Appartment Fes</h4>
+          <p>
+            Venus Room in Charming Riad
+          </p>
+          <h5>3 Guests, 1 bedroom, 2 beds, 1 bathroom <span>$62/night</span></h5>
+          <button class="btn">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section__container room__container">
+    <p class="section__subheader">Available Appartments</p>
+    <h2 class="section__header">Dakhla</h2>
+    <div class="room__grid">
+      <div class="room__card">
+        <div class="room__card__image">
+          <img src="assets/da1.webp" alt="room" />
+        </div>
+        <div class="room__card__details">
+          <h4>Appartment Dakhla</h4>
+          <p>
+            Superb, cosy and well-located apartment
+          </p>
+          <h5>4 Guests, 2 Bedrooms, 4 Beds, 1 Bathroom <span>$50/night</span></h5>
+          <button class="btn">Book Now</button>
+        </div>
+      </div>
+      <div class="room__card">
+        <div class="room__card__image">
+          <img src="assets/da2.webp" alt="room" />
+        </div>
+        <div class="room__card__details">
+          <h4>Appartment Dakhla</h4>
+          <p> Relaxing on this beautiful beach
+          </p>
+          <h5>3 Guests, 1 Bedroom, 2 Beds, 1 Bathroom <span>$79/night</span></h5>
+          <button class="btn">Book Now</button>
+        </div>
+      </div>
+      <div class="room__card">
+        <div class="room__card__image">
+          <img src="assets/da3.webp" alt="room" />
+        </div>
+        <div class="room__card__details">
+          <h4>Appartment Dakhla</h4>
+          <p>
+            Ocean Villa Lodge
+          </p>
+          <h5>2 Guests, 3 bedrooms, 4 bed, 4 bathroom <span>$68/night</span></h5>
+          <button class="btn">Book Now</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="service" id="service">
+    <div class="section__container service__container">
+      <div class="service__content">
+        <p class="section__subheader">SERVICES</p>
+        <h2 class="section__header">Strive Only For The Best.</h2>
+        <ul class="service__list">
+          <li>
+            <span><i class="ri-shield-star-line"></i></span>
+            High Class Security
+          </li>
+          <li>
+            <span><i class="ri-24-hours-line"></i></span>
+            24 Hours Room Service
+          </li>
+          <li>
+            <span><i class="ri-wifi-fill"></i></span>
+            Free Wifi
+          </li>
+          <li>
+            <span><i class="ri-map-2-line"></i></span>
+            Tourist Guide Support
+          </li>
         </ul>
-        <a href="login.html" class="btn nav__btn">Login</a>
-      </nav >
-      <div class="section__container header__container" id="home">
-        <h3>Simple - Unique - Friendly</h3>
-        <h1>Make Yourself At Home<br />Enjoy your <span>Stay</span>.</h1>
       </div>
-    </header>
+    </div>
 
-    
+  </section>
 
-    <section class="section__container booking__container">
-      <form action="/" class="booking__form">
-        <div class="input__group">
-          <span><i class="ri-calendar-2-fill"></i></span>
-          <div>
-            <label for="check-in" id="check_in">CHECK-IN</label>
-            <input type="text" placeholder="Check In" id="check-in" />
-          </div>
-        </div>
-        <div class="input__group">
-          <span><i class="ri-calendar-2-fill"></i></span> 
-          <div>
-            <label for="check-out">CHECK-OUT</label>
-            <input type="text" placeholder="Check Out" id="check-out" />
-          </div>
-        </div>
-        <div class="input__group">
-          <span><i class="ri-user-fill"></i></span>
-          <div>
-            <label for="guest">GUEST</label>
-            <input type="number" placeholder="Guest" min="1" max="6"/>
-          </div>
-        </div>
-        <div class="input__group input__btn">
-          <button class="btn">Search</button>
-        </div>
-      </form>
-    </section>
 
-    <section class="section__container about__container" id="about">
-      <div class="about__image">
-        <img src="assets/about.jpg" alt="about" />
-      </div>
-      <div class="about__content">
-        <p class="section__subheader">ABOUT US</p>
-        <h2 class="section__header">The Best Holidays in Morocco Start Here!</h2>
-        <p class="section__description">
-          With a focus on quality accommodations, personalized experiences, and
-          seamless booking, our platform is dedicated to ensuring that every
-          traveler embarks on their dream holiday with confidence and
-          excitement.
+
+
+  <footer id="contact-us" class="footer">
+    <div class="section__container footer__container">
+      <div class="footer__col">
+        <h3>Home Stay</h3>
+        <p>
+          Home Stay is a booking website that offers a seamless and
+          convenient way to find and book accommodations in Morocco.
         </p>
-        <div class="about__btn">
-          <button class="btn">Read More</button>
-        </div>
+        <p>
+          With a user-friendly interface and a vast selection of hotels and appartments,
+          Home Stay aims to provide a stress-free experience for travelers
+          seeking the perfect stay.
+        </p>
       </div>
-    </section>
-
-    <section class="section__container room__container" id="Appartement">
-      <p class="section__subheader">Available Appartments</p>
-      <h2 class="section__header">Marrakech</h2>
-      <div class="room__grid">
-        <div class="room__card">
-          <div class="room__card__image">
-            <img src="assets/ap1.webp" alt="room" />
-          </div>
-          <div class="room__card__details">
-            <h4>Appartment Marrakech</h4>
-            <p>
-              Appartement , Gueliz, Marrakech , Maroc
-            </p>
-            <h5>3 Guests, 1 Room, 1 Bed ,1 Bathroom <span>$57/night</span></h5>
-            <button class="btn">Book Now</button>
-          </div>
-        </div>
-        <div class="room__card">
-          <div class="room__card__image">
-            <img src="assets/ap2.jpeg" alt="room" />
-          </div>
-          <div class="room__card__details">
-            <h4>Appartment Marrakech</h4>
-            <p> Peaceful oasis with a pool in the heart of Gueliz
-            </p>
-            <h5>3 Guests, 1 Bedroom, 2 beds, 1 Bathroom <span>$59/night</span></h5>
-            <button class="btn">Book Now</button>
-          </div>
-        </div>
-        <div class="room__card">
-          <div class="room__card__image">
-            <img src="assets/ap3.jpeg" alt="room" />
-          </div>
-          <div class="room__card__details">
-            <h4>Appartment Marrakech</h4>
-            <p>
-              Havre de Paix au cœur de Gueliz 
-            </p>
-            <h5>3 Guests, 1 bedroom, 1 bed, 1 bathroom <span>$65/night</span></h5>
-            <button class="btn">Book Now</button>
-          </div>
-        </div>
+      <div class="footer__col">
+        <h4>Company</h4>
+        <p>About Us</p>
+        <p>Our Team</p>
+        <p>Blog</p>
+        <p>Book</p>
+        <p>Contact Us</p>
       </div>
-    </section>
-
-    <section class="section__container room__container">
-      <p class="section__subheader">Available Appartments</p>
-      <h2 class="section__header">Agadir</h2>
-      <div class="room__grid">
-        <div class="room__card">
-          <div class="room__card__image">
-            <img src="assets/ag1.webp" alt="room" />
-          </div>
-          <div class="room__card__details">
-            <h4>Appartment Agadir</h4>
-            <p>
-              Chic seaside apartment with mountain views
-            </p>
-            <h5>6 Guests, 2 Bedroom, 3 beds, 2 Bathroom <span>$95/night</span></h5>
-            <button class="btn">Book Now</button>
-          </div>
-        </div>
-        <div class="room__card">
-          <div class="room__card__image">
-            <img src="assets/ag3.webp" alt="room" />
-          </div>
-          <div class="room__card__details">
-            <h4>Appartment Agadir</h4>
-            <p> Peaceful oasis with a pool in the heart of Gueliz
-            </p>
-            <h5>3 Guests, 1 Bedroom, 2 beds, 1 Bathroom <span>$59/night</span></h5>
-            <button class="btn">Book Now</button>
-          </div>
-        </div>
-        <div class="room__card">
-          <div class="room__card__image">
-            <img src="assets/ag2.webp" alt="room" />
-          </div>
-          <div class="room__card__details">
-            <h4>Appartment Agadir</h4>
-            <p>
-              Havre de Paix au cœur de Gueliz 
-            </p>
-            <h5>3 Guests, 1 bedroom, 1 bed, 1 bathroom <span>$65/night</span></h5>
-            <button class="btn">Book Now</button>
-          </div>
-        </div>
+      <div class="footer__col">
+        <h4>Legal</h4>
+        <p>FAQs</p>
+        <p>Terms & Conditions</p>
+        <p>Privacy Policy</p>
       </div>
-    </section>
-
-    <section class="section__container room__container">
-      <p class="section__subheader">Available Appartments</p>
-      <h2 class="section__header">Tangier</h2>
-      <div class="room__grid">
-        <div class="room__card">
-          <div class="room__card__image">
-            <img src="assets/ta1.webp" alt="room" />
-          </div>
-          <div class="room__card__details">
-            <h4>Appartment Tangier</h4>
-            <p>
-              Moyra Hill - Tangier
-            </p>
-            <h5>4 Guests, 1 Bedroom, 2 beds, 1 Bathroom <span>$69/night</span></h5>
-            <button class="btn">Book Now</button>
-          </div>
-        </div>
-        <div class="room__card">
-          <div class="room__card__image">
-            <img src="assets/ta2.webp" alt="room" />
-          </div>
-          <div class="room__card__details">
-            <h4>Appartment Tangier</h4>
-            <p> Loft à 5mn de la plage-Marina
-            </p>
-            <h5>3 Guests, 1 Bedroom, 2 Bathrooms <span>$59/night</span></h5>
-            <button class="btn">Book Now</button>
-          </div>
-        </div>
-        <div class="room__card">
-          <div class="room__card__image">
-            <img src="assets/ta3.webp" alt="room" />
-          </div>
-          <div class="room__card__details">
-            <h4>Appartment Tangier</h4>
-            <p>
-              Havre de Paix au cœur de Gueliz 
-            </p>
-            <h5>2 Guests, 1 bedroom, 1 bed, 1 bathroom <span>$114/night</span></h5>
-            <button class="btn">Book Now</button>
-          </div>
-        </div>
+      <div class="footer__col">
+        <h4>Resources</h4>
+        <p>Social Media</p>
+        <p>Help Center</p>
+        <p>Partnerships</p>
       </div>
-    </section>
+    </div>
 
-    <section class="section__container room__container">
-      <p class="section__subheader">Available Appartments</p>
-      <h2 class="section__header">Chefchaouen</h2>
-      <div class="room__grid">
-        <div class="room__card">
-          <div class="room__card__image">
-            <img src="assets/ch1.webp" alt="room" />
+    <script src="java.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+    <script>
+      flatpickr("#check-in", {
+        dateFormat: "Y-m-d",
+        minDate: "today",
+        onChange: function (selectedDates, dateStr, instance) {
+          // Set min date for check-out to be after check-in
+          const checkout = document.getElementById("check-out")._flatpickr;
+          checkout.set("minDate", dateStr);
+        }
+      });
+
+      flatpickr("#check-out", {
+        dateFormat: "Y-m-d",
+        minDate: "today"
+      });
+    </script>
+
+    <!-- Booking Modal -->
+    <div id="booking-modal" class="booking__modal hidden">
+      <div class="modal__content">
+        <span class="close-modal">&times;</span>
+        <h2 id="modal-room-name">Room Name</h2>
+        <p id="modal-room-price" class="modal__price">$0/night</p>
+
+        <form id="booking-form">
+          <div class="form__group">
+            <label>Full Name</label>
+            <input type="text" id="booking-name" required placeholder="John Doe">
           </div>
-          <div class="room__card__details">
-            <h4>Appartment Chefchaouenr</h4>
-            <p>
-              Dar Lamdina
-            </p>
-            <h5>4 Guests, 2 Bedroom, 3 beds, 2 Bathroom <span>$49/night</span></h5>
-            <button class="btn">Book Now</button>
+
+          <div class="form__group">
+            <label>Email</label>
+            <input type="email" id="booking-email" required placeholder="john@example.com">
           </div>
-        </div>
-        <div class="room__card">
-          <div class="room__card__image">
-            <img src="assets/ché.webp" alt="room" />
+
+          <div class="form__group">
+            <label>Check-in</label>
+            <input type="text" id="modal-checkin" placeholder="Select Date">
           </div>
-          <div class="room__card__details">
-            <h4>Appartment Chefchaouen</h4>
-            <p> Loft à 5mn de la plage-Marina
-            </p>
-            <h5>4 Guests, 1 Bedroom, 2Bed, 1 Bathroom <span>$30/night</span></h5>
-            <button class="btn">Book Now</button>
+
+          <div class="form__group">
+            <label>Check-out</label>
+            <input type="text" id="modal-checkout" placeholder="Select Date">
           </div>
-        </div>
-        <div class="room__card">
-          <div class="room__card__image">
-            <img src="assets/ch3.webp" alt="room" />
+
+          <div class="booking__summary">
+            <p>Nights: <span id="booking-nights">0</span></p>
+            <p>Total: <span id="booking-total">$0</span></p>
           </div>
-          <div class="room__card__details">
-            <h4>Appartment Chefchaouen</h4>
-            <p>
-              cozy room air-conditioning & amazing breakfast
-            </p>
-            <h5>1 Guest, 1 bedroom, 1 bed, 1 bathroom <span>$39/night</span></h5>
-            <button class="btn">Book Now</button>
-          </div>
-        </div>
+
+          <button type="submit" class="btn modal__btn">Add to Cart</button>
+        </form>
       </div>
-    </section>
+    </div>
 
-    <section class="section__container room__container">
-      <p class="section__subheader">Available Appartments</p>
-      <h2 class="section__header">Fes</h2>
-      <div class="room__grid">
-        <div class="room__card">
-          <div class="room__card__image">
-            <img src="assets/fes1.webp" alt="room" />
-          </div>
-          <div class="room__card__details">
-            <h4>Appartment Fes</h4>
-            <p>
-              Riad zerbtana
-            </p>
-            <h5>1 Guest, 1 Bedroom, 1 bed, 1 Bathroom <span>$24/night</span></h5>
-            <button class="btn">Book Now</button>
-          </div>
-        </div>
-        <div class="room__card">
-          <div class="room__card__image">
-            <img src="assets/fes2.jpg" alt="room" />
-          </div>
-          <div class="room__card__details">
-            <h4>Appartment Fes</h4>
-            <p> Beautiful Sultan Room
-            </p>
-            <h5>1 Guest, 1 Bedroom, 1Bed, 1 Bathroom <span>$32/night</span></h5>
-            <button class="btn">Book Now</button>
-          </div>
-        </div>
-        <div class="room__card">
-          <div class="room__card__image">
-            <img src="assets/fes3.jpg" alt="room" />
-          </div>
-          <div class="room__card__details">
-            <h4>Appartment Fes</h4>
-            <p>
-              Venus Room in Charming Riad
-            </p>
-            <h5>3 Guests, 1 bedroom, 2 beds, 1 bathroom <span>$62/night</span></h5>
-            <button class="btn">Book Now</button>
-          </div>
-        </div>
+    <!-- Cart Sidebar -->
+    <div class="cart__sidebar" id="cart-sidebar">
+      <div class="cart__header">
+        <h2>Your Cart</h2>
+        <span class="close-cart" id="close-cart">&times;</span>
       </div>
-    </section>
 
-    <section class="section__container room__container">
-      <p class="section__subheader">Available Appartments</p>
-      <h2 class="section__header">Dakhla</h2>
-      <div class="room__grid">
-        <div class="room__card">
-          <div class="room__card__image">
-            <img src="assets/da1.webp" alt="room" />
-          </div>
-          <div class="room__card__details">
-            <h4>Appartment Dakhla</h4>
-            <p>
-              Superb, cosy and well-located apartment
-            </p>
-            <h5>4 Guests, 2 Bedrooms, 4 Beds, 1 Bathroom <span>$50/night</span></h5>
-            <button class="btn">Book Now</button>
-          </div>
-        </div>
-        <div class="room__card">
-          <div class="room__card__image">
-            <img src="assets/da2.webp" alt="room" />
-          </div>
-          <div class="room__card__details">
-            <h4>Appartment Dakhla</h4>
-            <p> Relaxing on this beautiful beach
-            </p>
-            <h5>3 Guests, 1 Bedroom, 2 Beds, 1 Bathroom <span>$79/night</span></h5>
-            <button class="btn">Book Now</button>
-          </div>
-        </div>
-        <div class="room__card">
-          <div class="room__card__image">
-            <img src="assets/da3.webp" alt="room" />
-          </div>
-          <div class="room__card__details">
-            <h4>Appartment Dakhla</h4>
-            <p>
-              Ocean Villa Lodge
-            </p>
-            <h5>2 Guests, 3 bedrooms, 4 bed, 4 bathroom <span>$68/night</span></h5>
-            <button class="btn">Book Now</button>
-          </div>
-        </div>
+      <div class="cart__items" id="cart-items">
+        <!-- Items will be injected here JS -->
+        <div class="empty-cart-msg">Your cart is empty.</div>
       </div>
-    </section>
 
-
-
-
-    <section class="service" id="service">
-      <div class="section__container service__container">
-        <div class="service__content">
-          <p class="section__subheader">SERVICES</p>
-          <h2 class="section__header">Strive Only For The Best.</h2>
-          <ul class="service__list">
-            <li>
-              <span><i class="ri-shield-star-line"></i></span>
-              High Class Security
-            </li>
-            <li>
-              <span><i class="ri-24-hours-line"></i></span>
-              24 Hours Room Service
-            </li>
-            <li>
-              <span><i class="ri-wifi-fill"></i></span>
-              Free Wifi
-            </li>
-            <li>
-              <span><i class="ri-map-2-line"></i></span>
-              Tourist Guide Support
-            </li>
-          </ul>
+      <div class="cart__footer">
+        <div class="cart__total">
+          <span>Total:</span>
+          <span id="cart-total-price">$0</span>
         </div>
+        <button class="btn cart__btn" id="checkout-btn">Proceed to Checkout</button>
       </div>
-      
-    </section>
 
-    
+      <!-- Checkout / Payment Section (Hidden by default) -->
+      <div class="checkout__section hidden" id="checkout-section">
+        <div class="cart__header">
+          <h2 style="font-size: 1.2rem;">Payment Details</h2>
+          <button class="back-to-cart" id="back-to-cart">Back</button>
+        </div>
 
-    
-    <footer id="contact-us" class="footer">
-      <div class="section__container footer__container">
-        <div class="footer__col">
-          <h3>Home Stay</h3>
-          <p>
-            Home Stay is a booking website that offers a seamless and
-            convenient way to find and book accommodations in Morocco.
-          </p>
-          <p>
-            With a user-friendly interface and a vast selection of hotels and appartments,
-            Home Stay aims to provide a stress-free experience for travelers
-            seeking the perfect stay.
-          </p>
-        </div>
-        <div class="footer__col">
-          <h4>Company</h4>
-          <p>About Us</p>
-          <p>Our Team</p>
-          <p>Blog</p>
-          <p>Book</p>
-          <p>Contact Us</p>
-        </div>
-        <div class="footer__col">
-          <h4>Legal</h4>
-          <p>FAQs</p>
-          <p>Terms & Conditions</p>
-          <p>Privacy Policy</p>
-        </div>
-        <div class="footer__col">
-          <h4>Resources</h4>
-          <p>Social Media</p>
-          <p>Help Center</p>
-          <p>Partnerships</p>
-        </div>
+        <form id="payment-form">
+          <div class="form__group">
+            <label>Cardholder Name</label>
+            <input type="text" placeholder="e.g. John Doe" required>
+          </div>
+          <div class="form__group">
+            <label>Card Number</label>
+            <div style="position: relative;">
+              <input type="text" placeholder="0000 0000 0000 0000" maxlength="19" required>
+              <i class="ri-bank-card-fill" style="position: absolute; right: 10px; top: 10px; color: #999;"></i>
+            </div>
+          </div>
+          <div style="display: flex; gap: 10px;">
+            <div class="form__group" style="flex: 1;">
+              <label>Expiry</label>
+              <input type="text" placeholder="MM/YY" maxlength="5" required>
+            </div>
+            <div class="form__group" style="flex: 1;">
+              <label>CVV</label>
+              <input type="text" placeholder="123" maxlength="3" required>
+            </div>
+          </div>
+          <button type="submit" class="btn modal__btn">Pay Now</button>
+        </form>
       </div>
-    
-      <script src="java.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-      <script>
-  flatpickr("#check-in", {
-    dateFormat: "Y-m-d",
-    minDate: "today",
-    onChange: function(selectedDates, dateStr, instance) {
-      // Set min date for check-out to be after check-in
-      const checkout = document.getElementById("check-out")._flatpickr;
-      checkout.set("minDate", dateStr);
-    }
-  });
+    </div>
 
-  flatpickr("#check-out", {
-    dateFormat: "Y-m-d",
-    minDate: "today"
-  });
-</script>
+    <div class="overlay hidden" id="cart-overlay"></div>
 
-  </body>
+    <script src="booking.js"></script>
+</body>
+
 </html>

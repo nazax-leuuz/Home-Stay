@@ -14,7 +14,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
-  background: url('Pictures/zlayji.png') center/cover no-repeat fixed;
+  background: url('assets/zlayji.png') center/cover no-repeat fixed;
 }
 
 h1 {
@@ -79,12 +79,13 @@ nav {
   color: var(--primary-color);
 }
 
-.input_btn{
+.input_btn {
   font-size: 24px;
   color: var(--white);
   cursor: pointer;
   display: none;
 }
+
 .header__container {
   padding: 16px 16px 80px;
 }
@@ -92,8 +93,8 @@ nav {
 .header__image__container {
   position: relative;
   min-height: 500px;
-  background: linear-gradient(to right, rgba(44, 56, 85, 0.9), rgba(100, 125, 187, 0.1)), url("Pictures/playa.webp") center/cover no-repeat;
-  border-radius: 32px;  
+  background: linear-gradient(to right, rgba(44, 56, 85, 0.9), rgba(100, 125, 187, 0.1)), url("assets/playa.webp") center/cover no-repeat;
+  border-radius: 32px;
 }
 
 .header__content {
@@ -162,7 +163,10 @@ nav {
 }
 
 .book-now-btn {
-  padding: 10px 20px;
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  width: fit-content;
+  align-self: flex-start;
   background: var(--primary-color);
   color: var(--white);
   border: none;
@@ -195,10 +199,17 @@ nav {
   overflow: hidden;
   border-radius: 16px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .popular__content {
   padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .popular__card__header {
@@ -220,6 +231,7 @@ nav {
 }
 
 .popular__card img {
+  width: 100%;
   height: 300px;
   object-fit: cover;
   border-radius: 8px;
@@ -241,7 +253,9 @@ nav {
 }
 
 .client__card img {
-  max-width: 80px;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
   margin: auto;
   margin-bottom: 16px;
   border-radius: 100%;
@@ -305,4 +319,297 @@ nav {
   font-size: 14px;
   text-align: right;
   color: var(--text-light);
+}
+
+/* --- Cart Badge Animation --- */
+@keyframes pop {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.pop-anim {
+  animation: pop 0.3s ease;
+}
+
+/* --- Booking Modal Styles --- */
+.booking__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+
+.booking__modal.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal__content {
+  background-color: var(--white);
+  padding: 32px;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 500px;
+  position: relative;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 28px;
+  cursor: pointer;
+  color: var(--text-light);
+}
+
+.close-modal:hover {
+  color: var(--primary-color);
+}
+
+.modal__price {
+  font-size: 1.2rem;
+  color: var(--primary-color);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.form__group {
+  margin-bottom: 16px;
+}
+
+.form__group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.form__group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+  font-family: inherit;
+}
+
+.booking__summary {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.booking__summary p {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.booking__summary span {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.modal__btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* --- Cart Sidebar Styles --- */
+.cart__sidebar {
+  position: fixed;
+  top: 0;
+  right: -400px;
+  /* Start hidden off-screen */
+  width: 100%;
+  max-width: 400px;
+  height: 100vh;
+  background: var(--white);
+  box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+  transition: right 0.4s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.cart__sidebar.active {
+  right: 0;
+}
+
+.cart__header {
+  padding: 20px;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cart__header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.close-cart {
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.cart__items {
+  flex: 1;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.cart__footer {
+  padding: 20px;
+  border-top: 1px solid #eee;
+  background: #f9f9f9;
+}
+
+.cart__total {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--text-dark);
+}
+
+.cart__btn {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+  font-size: 1.1rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* --- Cart Item Style --- */
+.cart-item {
+  display: flex;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 15px;
+  align-items: center;
+  gap: 15px;
+}
+
+.cart-item-info {
+  flex: 1;
+}
+
+.cart-item-title {
+  font-weight: 600;
+  color: var(--text-dark);
+  font-size: 0.95rem;
+  margin-bottom: 4px;
+}
+
+.cart-item-details {
+  font-size: 0.8rem;
+  color: var(--text-light);
+}
+
+.cart-item-price {
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-top: 5px;
+}
+
+.remove-item {
+  color: var(--text-light);
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: 0.2s;
+}
+
+.remove-item:hover {
+  color: var(--primary-color);
+}
+
+/* --- Checkout Section --- */
+.checkout__section {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--white);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 20px;
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+.checkout__section.hidden {
+  transform: translateX(110%);
+  /* Slide out to right */
+}
+
+.back-to-cart {
+  background: none;
+  border: none;
+  font-weight: 500;
+  cursor: pointer;
+  color: var(--text-light);
+}
+
+#payment-form {
+  padding: 20px;
+  flex: 1;
+  overflow-y: auto;
+}
+
+/* --- Overlay --- */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+
+.overlay.hidden {
+  opacity: 0;
+  pointer-events: none;
 }
